@@ -30,6 +30,8 @@ public class TokenProvider {
     private String makeToken(Date expiry, User user) {
         Date now = new Date();
 
+        System.out.println("토큰 만들기!!!!!!!!!!!!!!!!!!!!!!!!");
+
         return Jwts.builder()
                 .setHeaderParam(Header.TYPE, Header.JWT_TYPE)
                 .setIssuer(jwtProperties.getIssuer())

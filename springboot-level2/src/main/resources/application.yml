@@ -11,6 +11,16 @@ spring:
   h2:
     console:
       enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 536761092606-ttrpos4c2qpnkq83j6k9srr1uevgoo4n.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
 
 jwt:
   issuer: spor1998@naver.com
